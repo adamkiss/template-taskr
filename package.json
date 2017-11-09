@@ -1,0 +1,31 @@
+{
+  "name": "template-taskr",
+  "version": "1.0.1",
+  "description": "Scaffold Taskr plugins with Sao",
+  "repository": {
+    "url": "adamkiss/template-taskr-plugin",
+    "type": "git"
+  },
+  "author": "adamkiss <iamadamkiss+npm@gmail.com> (https://adamkiss.com)",
+  "license": "MIT",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "speakingurl": "~14.0.1",
+    "superb": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "sao": "^0.22.1"
+  },
+  "xo": {
+    "rules": {
+      "semi": 0
+    }
+  }
+}
