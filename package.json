@@ -24,8 +24,6 @@
     "sao": "^0.22.1"
   },
   "xo": {
-    "rules": {
-      "semi": 0
-    }
+    "semicolon": false
   }
 }
