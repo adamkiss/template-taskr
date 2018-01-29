@@ -1,5 +1,5 @@
 {
-	"name": "<%= name %>",
+	"name": "<%= prefixedName %>",
 	"version": "0.0.0",
 	"description": "<%= description %>",
 	"repository": "<%= repo %>",
@@ -17,7 +17,7 @@
 		"test": "xo && <%= testCommand %>"
 	},
 	"author": {
-		"name": "<%= name %>",
+		"name": "<%= author %>",
 		"email": "<%= email %>",
 		"url": "<%= website %>"
 	},

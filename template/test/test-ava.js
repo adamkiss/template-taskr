@@ -8,12 +8,12 @@ const plugins = [require('@taskr/clear'), require('../')]
 const tmpDir = str => join(__dirname, str)
 const create = tasks => new Taskr({tasks, plugins})
 
-test('attach `<%= name %>` plugin to instance', t => {
+test('attach `<%= prefixedName %>` plugin to instance', t => {
 	const taskr = create()
 	t.ok('<%= slugName %>' in taskr.plugins)
 })
 
-test('attach `<%= slugName %>` to Task instance', t => {
+test('attach `<%= prefixedName %>` to Task instance', t => {
 	create({
 		* foo(task) {
 			t.ok('<%= slugName %>' in task)

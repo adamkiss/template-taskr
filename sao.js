@@ -15,12 +15,12 @@ module.exports = {
   },
   prompts: {
     name: {
-      message: 'What is the name of the new project?',
+      message: 'What is the (unprefixed) name of the plugin?',
       default: ':folderName:'
     },
     description: {
-      message: 'How would you descripe the new project?',
-      default: `my ${superb()} project`
+      message: 'How would you describe the plugin?',
+      default: `my ${superb()} plugin for Taskr`
     },
     author: {
       message: 'What is your name?',
@@ -66,8 +66,10 @@ module.exports = {
     }
   },
   data(answers) {
-    return {
-      slugName: slug(answers.name),
+    const slugName = slug(answers.name)
+    return add = {
+      slugName,
+      prefixedName: `taskr-${slugName}`,
       testCommand: testCommands[answers.testTool]
     }
   },

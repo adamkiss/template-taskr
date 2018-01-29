@@ -1,3 +1,3 @@
-describe("<%= name %>", () => {
-	it("<%= name %> works properly", done => done());
+describe("<%= prefixedName %>", () => {
+	it("<%= prefixedName %> works properly", done => done());
 });

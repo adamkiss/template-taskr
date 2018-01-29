@@ -8,12 +8,12 @@ const plugins = [require('@taskr/clear'), require('../')]
 const tmpDir = str => join(__dirname, str)
 const create = tasks => new Taskr({tasks, plugins})
 
-test('<%= slugName %>', t => {
+test('<%= prefixedName %>', t => {
 	t.plan(3)
 	const taskr = create({
 		* foo(task) {
-			t.true('<%= slugName %>' in task, 'attach `<%= name %>` to Task instance')
-			t.true('<%= slugName %>' in taskr.plugins, 'attach `<%= name %>` plugin to instance')
+			t.true('<%= slugName %>' in task, 'attach `<%= prefixedName %>` to Task instance')
+			t.true('<%= slugName %>' in taskr.plugins, 'attach `<%= prefixedName %>` plugin to instance')
 			// Example usage test
 			const tmp = tmpDir('tmp1')
 			yield task.source(`${dir}/*.js`).target(tmp)

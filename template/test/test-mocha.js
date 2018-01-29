@@ -1,7 +1,7 @@
 var assert = require('assert');
 
-describe('<%= name %>', () => {
-	it('<%= name %> works properly', () => {
+describe('<%= prefixedName %>', () => {
+	it('<%= prefixedName %> works properly', () => {
 		assert.ok(true);
 	});
 });
