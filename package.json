@@ -1,6 +1,6 @@
 {
   "name": "template-taskr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Scaffold Taskr plugins with Sao",
   "repository": {
     "url": "adamkiss/template-taskr-plugin",
